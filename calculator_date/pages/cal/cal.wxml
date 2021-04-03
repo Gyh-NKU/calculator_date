@@ -1,0 +1,33 @@
+<!--pages/cal/cal.wxml-->
+<view class="container" style="padding-top:50rpx">
+  <view class="date">起始日期</view>
+  <picker mode="date" value="{{date}}" start="1870-09-01" end="2180-09-01" bindchange="bindDateChangefrom">
+    <view class="picker">
+       {{datefrom}}
+    </view>
+  </picker>
+  <view class='selector'>
+    <view class="date">计算类型</view>
+    <view>
+      <radio-group bindchange="radioChange">
+        <label wx:for="{{items}}" wx:key="{{item.value}}" class="radios">
+          <view>
+            <radio value="{{item.value}}" checked= "{{item.checked}}" color="blue"/>
+          </view>
+          <view>{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="date">加/减天数</view>
+  <view class='date'>
+    <input type="digit" class='inputer' bindinput="expinput" maxlength="4"/>
+  </view>
+  <view>
+  <button class="bar-button" hover-class="bar-button__hover" style="margin-top:100rpx" bindtap="getans">计算结果</button>
+  </view>
+  <view class="date" style='margin-top:130rpx'>
+    {{answer}}
+  </view>
+</view>
+

@@ -1,0 +1,47 @@
+/* pages/cal/cal.wxss */
+.inputer{
+  display:flex;
+  width: 300rpx;
+  height: 80rpx;
+  background-color: #fcf8f988;
+  border-radius: 30rpx;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border:1px solid #3f4199;
+  
+  /* padding-right: 80rpx; */
+}
+.picker{
+  display: flex;
+  border:1px solid #3f4199;
+  color: whitesmoke;
+  width: 300rpx;
+  height:80rpx;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  background-color: #fcf8f988;
+}
+.picker:active{
+  background-color: rgba(133, 130, 130, 0.502);
+}
+Page{
+  background-size: 100% 100%;
+  background-image: url("https://gyhpro.oss-cn-beijing.aliyuncs.com/pictures/bks/time.jpg?versionId=CAEQDBiBgIDX6aDMxBciIGNkNDkxMTAwOTI4MDRlMzk4NmI0ODE1NTY5NmQ3MGIy");
+}
+.date{
+  display: flex;
+  margin:30rpx;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+.selector{
+  color: whitesmoke;
+  margin-top:20rpx
+}
+.radios{
+  display: inline-flex;
+  margin: 10rpx;
+}

@@ -1,0 +1,22 @@
+<!--pages/between.wxml-->
+  <view class="container" style="padding-top:50rpx">
+  <view class="date">起始日期</view>
+  <picker mode="date" value="{{date}}" start="1970-09-01" end="2080-09-01" bindchange="bindDateChangefrom">
+    <view class="picker">
+       {{datefrom}}
+    </view>
+  </picker>
+  <view class="date">结束日期</view>
+  <picker mode="date" value="{{date}}" start="1970-09-01" end="2080-09-01" bindchange="bindDateChangeto">
+    <view class='picker'>
+       {{dateto}}
+    </view>
+  </picker>
+  <view>
+  <button class="bar-button" hover-class="bar-button__hover" style="margin-top:100rpx" bindtap="getans">计算结果</button>
+  </view>
+  <view class="date" style='margin-top:150rpx'>
+    {{answer}}
+  </view>
+</view>
+

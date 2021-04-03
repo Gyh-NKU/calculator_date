@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view id='title'>
+    日期计算器
+  </view>
+  <view>
+  <button class="bar-button" hover-class="bar-button__hover" style="margin-top:200rpx" bindtap="next_bet">计算两日期间间距</button>
+  <button class="bar-button" hover-class="bar-button__hover" style="margin-top:50rpx" bindtap="next_cal">日期加减法</button>
+  </view>
+</view>
